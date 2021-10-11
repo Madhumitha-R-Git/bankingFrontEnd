@@ -1,0 +1,71 @@
+<!-- <div class="login-reg-panel">
+    <div class="login-info-box">
+        <h2>Have an account?</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+        <label id="label-register" for="log-reg-show">Login</label>
+        <input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
+    </div>
+                        
+    <div class="register-info-box">
+        <h2>Don't have an account?</h2>
+        <p>Lorem ipsum dolor sit amet</p>
+        <label id="label-login" for="log-login-show">Register</label>
+        <input type="radio" name="active-log-panel" id="log-login-show">
+    </div>
+                        
+    <div class="white-panel">
+        <div class="login-show">
+            <h2>LOGIN</h2>
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="button" value="Login">
+            <a href="">Forgot password?</a>
+        </div>
+        <div class="register-show">
+            <h2>REGISTER</h2>
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+            <input type="button" value="Register">
+        </div>
+    </div>
+</div> -->
+
+  
+    <!-- <div class=”sec-container”>
+    <input type=”tel” [(ngModel)]=”phoneNumber” name = "phonenumber" class=”get-input” placeholder=”Phone” >
+    <button ng-click=”sendOtp()” class=”button-press”>Get OTP</button>
+    </div>
+    <div class=”sec-container”>
+    <input type=”number” [(ngModel)]=”otp” name="otp" class=”get-input” >
+    <button ng-click=”signIn()” class=”button-press”>Sign In</button>
+    </div> -->
+    <!-- <div class="loginform">
+        <form #userform="ngForm" name="userform" (ngSubmit)="userform.valid && sendOtp()" >
+          <label></label>
+          <input type="tel" name="phonenumber" class="name" required  [(ngModel)]="phonenumber" placeholder="Enter your phonenumber"><br>
+          <input type="submit" class="but" value="GetOTP"><br>
+        </form>
+    </div> -->
+
+
+    <div class="contain">
+        <div class="row d-flex align-items-center justify-content-center">
+          <form class="col-md-6">
+            <div class="card px-5 py-5">
+              <div class="form-input">
+                <input type="text" name="phoneNumber" placeholder="Phone Number" class="form-control"
+                  placeholder="Enter Phone Number" [(ngModel)]="phoneNumber" min="10" max="15"><br>
+                  <input type="password" name="password" placeholder="Enter your password" class="form-control"
+                  placeholder="Enter password" [(ngModel)]="password"><br>
+              </div>
+              <button class="btn btn-success mt-4 signup" (click)="LogBtn()">Login</button><br><br>
+              <p>New user ?</p>
+              <button class="btn btn-success mt-4 signup" (click)="regbtn()">Register</button><br><br>
+              </div>
+          </form>
+        </div>
+        </div>
+
+
+   

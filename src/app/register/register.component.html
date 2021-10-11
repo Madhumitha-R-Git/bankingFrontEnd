@@ -1,0 +1,26 @@
+<div class="contain">
+    <div class="row d-flex align-items-center justify-content-center">
+      <form class="col-md-6">
+        <div class="card px-5 py-5">
+          <div class="form-input">
+            <input type="text" name="Name" class="form-control"
+            placeholder=" * Enter Your Name" [(ngModel)]="name"  ><br><br>
+            <input type="text" name="mail" class="form-control"
+            placeholder=" * Enter Your mail-id" [(ngModel)]="mail" ><br><br>
+            <input type="password" name="password" class="form-control"
+            placeholder=" * Enter Your password" [(ngModel)]="password" ><br><br>
+            <input type="tel" name="phoneNumber" placeholder="Phone Number" class="form-control"
+              placeholder="* Enter Your Phone Number" [(ngModel)]="phoneNumber" min="10" max="15" ><br><br>
+              <button class="btn btn-success btn-block signup"[disabled]="details" (click)="getOTP()" >Get OTP</button><br><br><br>
+              <div id="sign-in-button"></div>
+            </div>
+            <div class="otpclass">
+              <input type="text" name="otp" [(ngModel)]="otp" placeholder="Enter OTP" class="form-control"><br><br>
+              <button class="btn btn-success mt-4 btn-block signup" [disabled]="otpget" (click)="verifyOTP()" >Verify OTP</button><br><br><br>
+              <button class="btn btn-success mt-4 btn-block signup" [disabled]="ver" (click)="regBtn()" >Register</button>
+            </div>
+        </div>
+      </form>
+      </div>
+    </div>
+

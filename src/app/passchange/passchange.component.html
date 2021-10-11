@@ -1,0 +1,27 @@
+<div class="contain">
+    <div class="row d-flex align-items-center justify-content-center">
+      <form class="col-md-6">
+        <div class="card px-5 py-5">
+          <div class="form-input">
+
+            <input type="text" name="phonenumber" class="form-control"
+            placeholder=" * Enter Your phoneNumber" [(ngModel)]="phoneNumber"  ><br><br>
+
+            <input type="text" name="oldpass" class="form-control"
+            placeholder=" * Enter Your current password" [(ngModel)]="curr_pass"  ><br><br>
+
+            <input type="password" name="newpass" class="form-control"
+            placeholder=" * Enter Your new password" [(ngModel)]="new_pass" ><br><br>
+
+            <input type="password" name="repass" class="form-control"
+            placeholder=" * Re-Enter Your new password" [(ngModel)]="re_pass" ><br><br>
+
+              <button class="btn btn-success mt-4 btn-block signup" [disabled]="new_pass!==re_pass" (click)="changePass()" >Change Pin</button>
+            
+            </div>
+        </div>
+      </form>
+      </div>
+    </div>
+
+

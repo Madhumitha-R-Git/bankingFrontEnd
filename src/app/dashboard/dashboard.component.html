@@ -1,0 +1,23 @@
+<h2>Welcome {{userData}} !</h2>
+<div class="info flex">
+  This is your profile page. You can see use the facilities you are provided with and have a safe banking..
+</div>
+
+<div class = "balance" [style.visibility]="bal">
+  <h4>Your Balance is Rs.{{balamant}}</h4>
+</div>
+<div class="btn-toolbar butgrp flex">
+  <button type="button" class="btn  bt btn-outline-primary" (click)="bal_check()">Balance check</button><br>
+  <button type="button" class="btn bt btn-outline-secondary" (click)="money_transfer()">Money Transfer</button><br>
+  <button type="button" class="btn bt btn-outline-success" (click)="pin_change()">Pin Change</button><br>
+  <button type="button" class="btn bt btn-outline-info" (click)="pass_change()">Password Change</button><br>
+  <button type="button" (click)="logout()" class="btn bt btn-outline-danger">Logout</button>
+ 
+</div>
+
+
+
+
+
+
+

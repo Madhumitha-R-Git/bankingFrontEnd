@@ -1,0 +1,152 @@
+.mainnav
+{
+    background-color:#172774;
+    
+}
+.nav-item
+{
+    margin:20px;
+    
+}
+.brandname
+{
+    margin-left:90px;
+   color:white;
+   font-family: 'Ephesis', cursive;
+   font-size:50px;
+
+}
+@keyframes brname {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+p{
+   color:white;
+   top: 25px;
+   position: relative;
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   font-size:20px;
+}
+.nav_one
+{
+    margin-left:750px;
+   
+}
+.butcolor
+{
+    background-color:#DBD0C0;
+    
+}
+.backimg
+{
+    margin-top:30px;
+}
+.bankimg
+{
+   width:100%;
+   height:1200px;
+
+}
+
+.car
+{
+   
+    margin-top: 30px;
+    margin-bottom: 200px;
+  
+}
+.card1
+{
+    margin-bottom:40px;
+    animation: brname;
+    animation-delay: 2s;
+}
+.card2
+{
+    margin-bottom:40px;
+}
+.card-title
+{
+    text-align: center;
+    color:black;
+}
+.card-body
+{
+    background-color: burlywood;
+}
+.card:hover
+{
+    border:10px solid #A45D5D;
+    box-shadow: 5px 10px #888888;
+}
+.red{
+    background-color:red;
+    height:30px;
+  
+    margin-top:0px;
+
+}
+.nav-link:hover {
+    top: -2px;
+    margin-top: -2px;
+    position: relative;
+    background-color: green;
+}
+/* @media (min-width: 768px) { 
+    .car{
+        margin-left: 0px;
+        font-family: 'Explora', cursive;->presidio
+    }
+ } */
+ .bfooter{
+     height:50px;
+     width:100%;
+     margin:0;
+     bottom: 0;
+     background-color:#172774;;
+     
+
+ }
+ .fa-facebook-f,.fa-twitter,.fa-linkedin-in,.fa-google-plus-g
+ {
+    
+    color: white;
+    border-radius: 50%;
+ }
+
+ .foot{
+  
+    left: 0;
+    bottom: 0;
+    margin:0;
+    margin-top:30px;
+    width: 100%;
+    height:40px;
+    text-align: center; 
+    background-color:red;
+ }
+ .foot ul li {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+  }
+  .icon
+  {
+      margin-left:30px;
+      margin-top:5px;
+      font-size: 23px;
+     
+  }
+
+ @media (max-width: 500px) { 
+    .car{
+        margin-left: 60px;
+    }
+    .navbar a {
+        float: none;
+        display: block;
+      }
+      .brandname
+     { margin-left:10px;}
+  }
+  

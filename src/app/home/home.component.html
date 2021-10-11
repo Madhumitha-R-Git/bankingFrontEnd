@@ -1,0 +1,127 @@
+  <nav class="navbar navbar-expand-lg navbar-light navbar-dark mainnav container-fluid">
+    <a class="navbar-brand brandname" href="">Presidio</a>
+    <p>Let us grow better together..</p>
+    <button class="navbar-toggler d-lg-none" type="button" aria-controls="navbarNav" data-toggle="collapse"  (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbarsExampleDefault" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse navbar-right" id="navbarNav" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav">
+        <li class="nav-item one">
+          <a class="nav-link nav_one" href=""><i class="fa fa-fw fa-home"></i><b>Home</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login" routerLink="/login" routerLinkActive="active"><i class="fa fa-fw fa-sign-in"></i><b>Login</b>
+           </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Register" routerLink="/register" routerLinkActive="active"> <i class="fa fa-fw fa-user"></i><b>Register</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#footer"><i class="fa fa-fw fa-envelope"></i><b>Contact</b></a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="red">
+  
+  </div>
+  <router-outlet></router-outlet>
+
+
+  <script>
+    //starts the carousel
+    $('.carousel').carousel('cycle')
+  </script>
+  <div id="carouselExampleIndicators" class="carousel slide car" data-ride="carousel">
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol> -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="assets/images/bb.jpg" alt="First slide">
+       
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/images/atm.jpg" alt="Second slide">
+        
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/images/pig.jpg" alt="Third slide">
+      
+      </div>
+      
+  </div>
+  </div>
+
+  <div class="card-deck card1" >
+    <div class="card">
+      <img class="card-img-top" src="assets/images/agriloan.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Agricultural loan</h5>
+        <p class="card-text">
+          Farmers, Dairy Owners, Horticulturists, and any Orchard owners are eligible to apply for an Agriculture Loan. Most lenders prefer the age of the applicant to be within 24 to 65 years of age. </p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="assets/images/eduloan.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Education loan</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="assets/images/mediloan.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Medical loan</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck card2">
+    <div class="card">
+      <img class="card-img-top" src="assets/images/busiloan.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Personal loan</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="assets/images/houseloan.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">House loan</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="assets/images/goldloan.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Gold loan</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+    </div>
+  </div>
+  
+ 
+
+<div class="foot " id="footer">
+  <ul>
+    <li>
+      <a href="#" class = "icon">
+        <i class="fab fa-facebook-f icon   face"></i>    </a>
+    </li>
+    <li>
+      <a href="#" class="icon"><i class="fab fa-twitter icon"></i></a>
+    </li>
+    <li>
+      <a href="#" class="icon"><i class="fab fa-linkedin-in icon"></i></a></li>
+    <li>
+      <a href="#" class="icon"><i class="fab fa-google-plus-g icon"></i></a></li>
+  </ul>
+  </div>
+  <div class="bfooter">
+    
+  </div>
+  
+  

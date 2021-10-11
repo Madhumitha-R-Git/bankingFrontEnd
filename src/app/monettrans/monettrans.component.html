@@ -1,0 +1,25 @@
+
+<div class="contain" >
+    <div class="row d-flex align-items-center justify-content-center">
+      <form class="col-md-6">
+        <div class="card px-5 py-5">
+          <div class="form-input">
+            <input type="tel" name="phoneNumber" class="form-control"
+              placeholder="* Enter Your Phone Number" [(ngModel)]="sender_phoneNumber" min="10" max="15" ><br><br>
+  
+            <input type="password" name="pin" class="form-control"
+            placeholder=" * Enter Your transaction pin" [(ngModel)]="pin" ><br><br>
+
+            <input type="text" name="pin" class="form-control"
+            placeholder=" * Enter the amonut " [(ngModel)]="amount" ><br><br>
+  
+            <input type="tel" name="phoneNumber" class="form-control"
+            placeholder="* Enter beneficiar Phone Number" [(ngModel)]="receiver_phoneNumber" min="10" max="15" ><br><br>
+  
+             
+              <button class="btn btn-success mt-4 btn-block signup" (click)="sendBtn()" >Transfer</button>
+            </div>
+        </div>
+      </form>
+      </div>
+    </div>
