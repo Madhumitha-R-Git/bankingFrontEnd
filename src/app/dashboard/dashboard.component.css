@@ -29,8 +29,15 @@ h2
     margin-bottom: 30px;
    
 }
+.btn
+{
+    font-family: 'Cabin', sans-serif;
+}
 .info
 {
     margin-left: 400px;
     margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+    color:chocolate;
+    font-size: 30px;
 }

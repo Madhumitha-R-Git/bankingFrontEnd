@@ -21,9 +21,6 @@ export class MonettransComponent implements OnInit {
   pin=''
 
   amount=''
-
-  reCaptchaVerifier!: any;
-  verify!: string;
   moneydata:moneytrans={
     senderphoneNumber:this.sender_phoneNumber,
     receiverphoneNumber:this.receiver_phoneNumber,
@@ -47,7 +44,7 @@ export class MonettransComponent implements OnInit {
          alert("Receiver does not exists")
       else if(res.money==="1")
       alert("Your transaction pin is invalid")
-      else
+      else if(res.money==="0")
       {
       
        

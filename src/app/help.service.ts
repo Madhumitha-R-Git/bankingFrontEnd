@@ -11,14 +11,16 @@ import { passdata } from 'src/passdata';
 export class HelpService {
   
 
-  private url = 'http://localhost:3000/register'
-  private check_url = 'http://localhost:3000/login'
-  private usercheck_url = 'http://localhost:3000/usercheck'
-  private balcheck_url = 'http://localhost:3000/balcheck'
-  private moneycheck_url = 'http://localhost:3000/moneytranscheck'
-  private moneysucc_url = 'http://localhost:3000/moneytranssucc'
-  private pinchange_url = 'http://localhost:3000/pinchange'
-  private passchange_url = 'http://localhost:3000/passchange'
+  private baseurl = "http://3.144.136.5:3000/"
+
+  private url = this.baseurl+'/register'
+  private check_url = this.baseurl+'/login'
+  private usercheck_url = this.baseurl+'/usercheck'
+  private balcheck_url = this.baseurl+'/balcheck'
+  private moneycheck_url = this.baseurl+'/moneytranscheck'
+  private moneysucc_url = this.baseurl+'moneytranssucc'
+  private pinchange_url = this.baseurl+'/pinchange'
+  private passchange_url = this.baseurl+'/passchange'
 
   constructor(private __http : HttpClient) { }
 
