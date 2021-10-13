@@ -10,20 +10,23 @@ import { passdata } from 'src/passdata';
 })
 export class HelpService {
   
+  private baseurl = "http://"+window.location.hostname+":3000/"
+  constructor(private __http : HttpClient) { 
+    
   
-  private baseurl ="http://" + window.location.hostname + ":3000"
-
-  private url = this.baseurl+'/register'
-  private check_url = this.baseurl+'/login'
-  private usercheck_url = this.baseurl+'/usercheck'
-  private balcheck_url = this.baseurl+'/balcheck'
-  private moneycheck_url = this.baseurl+'/moneytranscheck'
+  
+  }
+  
+  private url = this.baseurl+'register'
+  private check_url = this.baseurl+'login'
+  private usercheck_url = this.baseurl+'usercheck'
+  private balcheck_url = this.baseurl+'balcheck'
+  private moneycheck_url = this.baseurl+'moneytranscheck'
   private moneysucc_url = this.baseurl+'moneytranssucc'
-  private pinchange_url = this.baseurl+'/pinchange'
-  private passchange_url = this.baseurl+'/passchange'
-
-  constructor(private __http : HttpClient) { }
-
+  private pinchange_url = this.baseurl+'pinchange'
+  private passchange_url = this.baseurl+'passchange'
+ 
+  
   regcheck(data:Data) {
     
     return this.__http.post<any>(this.usercheck_url,data)

@@ -27,6 +27,8 @@ check:Info={
     ) { }
 
   ngOnInit(): void {
+   
+    
   //  firebase.initializeApp(firebase);
   }
 //   onOtpChange(otp: string) {
@@ -90,6 +92,8 @@ check:Info={
 //   }
 LogBtn()
 {
+  console.log("tedting/.");
+  
   this.check={
     phoneNumber : this.phoneNumber,
     password : this.password

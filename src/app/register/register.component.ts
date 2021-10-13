@@ -123,7 +123,8 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit(): void { //firebase.initializeApp(environment.firebase);
-   
+//console.log(this._service.baseurl);
+
   }
   
   regBtn()
