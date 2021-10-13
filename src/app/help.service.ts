@@ -10,8 +10,8 @@ import { passdata } from 'src/passdata';
 })
 export class HelpService {
   
-
-  private baseurl = "http://3.144.136.5:3000/"
+  
+  private baseurl ="http://" + window.location.hostname + ":3000"
 
   private url = this.baseurl+'/register'
   private check_url = this.baseurl+'/login'
